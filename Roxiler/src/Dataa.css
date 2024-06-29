@@ -1,0 +1,162 @@
+Container for search and select
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  .sect {
+    position: fixed; /* Fixed positioning to stick to the viewport */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left edge of the viewport */
+    right: 0; /* Align to the right edge of the viewport */
+    height: 100px; /* Example height, adjust as needed */
+    background-color: rgb(176, 173, 169);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+    padding: 0 20px; 
+    box-shadow: 5px 5px 15px ;
+}
+
+  /* Search input style */
+  .sect input[type="search"] {
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+    margin-right: 10px;
+    height: 40px;
+  }
+  /* Month select style */
+  .sect select {
+    width: 200px; /* Adjust width as needed */
+    padding: 10px;
+  }
+  
+  /* Main table container */
+  .maintable {
+    margin-top: 250px;
+    width: 80%;
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+   */
+  /* Responsive table */
+  .table {
+    width: 80%;
+    max-width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+  }
+  
+  /* Table header */
+  .table thead {
+    background-color: #f2f2f2;
+  }
+  
+  /* Table rows */
+  .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Table cells */
+  .table td,
+  .table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  .mainStat{
+    display: flex;
+    height: 200px;
+    width: 350px;
+    font-size: x-large;
+    background-color: rgb(165, 218, 218);
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .sect {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .sect input[type="search"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .sect select {
+      width: 100%;
+    }
+  }
+  
+
+
+  /* Dataa.css */
+
+/* Main container */
+.Start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Section for search and select */
+.sect {
+    margin-bottom: 20px;
+}
+
+.sect input[type="search"], .sect select {
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Table styling */
+.table {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Statistics and charts containers */
+.statistics, .mainStat {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.barchart {
+    width: 60%;
+    margin-top: 250px;
+}
+.piechart {
+    width: 60%;
+    margin-top: 250px;
+}
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .table {
+        width: 60%;
+    }
+
+    .barchart, .piechart {
+        width: 100%;
+    }
+}
+
+  
